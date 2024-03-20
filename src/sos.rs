@@ -72,6 +72,9 @@ impl Sos {
     pub fn num_sections(&self) -> usize {
         self.sections.len()
     }
+    pub fn get_sections(&self) ->Vec<SosCoeffs> {
+        self.sections.clone()
+    }
 
     /// Create from a vector containing an array for each section.
     pub fn from_vec(vec: Vec<[f64; 6]>) -> Self {
